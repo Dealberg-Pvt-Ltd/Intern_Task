@@ -1,0 +1,18 @@
+@import "../../responsive.scss";
+
+.homeWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  padding: 20px;
+
+  @include md {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 17px;
+    padding: 17px;
+  }
+
+  @include sm {
+    grid-template-columns: 1fr;
+  }
+}

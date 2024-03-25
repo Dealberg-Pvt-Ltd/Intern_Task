@@ -1,0 +1,39 @@
+.navbar {
+  width: 100vw;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #dbe8d8;
+
+  a {
+    font-family: monospace;
+    color: #080808;
+    background-color: rgb(231, 226, 226);
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 5px;
+    transition: all 0.2s ease-in;
+    &:hover {
+      scale: 1.04;
+    }
+  }
+
+  button {
+    padding: 10px;
+    font-size: 20px;
+    font-family: monospace;
+    margin-right: 28px;
+    font-weight: 400;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+
+    &:hover {
+      scale: 1.04;
+    }
+  }
+}
