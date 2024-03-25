@@ -12,15 +12,12 @@ export function useLoginContext() {
 }
 
 const ContextWrapper = ({ children }) => {
-  const [product, setProduct] = useState(() => {
-    const storedProduct = localStorage.getItem("product");
-    return storedProduct ? JSON.parse(storedProduct) : {
-      id: null,
-      name: null,
-      title:null,
-      description: null,
-      image: null,
-    };
+  const [product, setProduct] = useState({
+    id: "",
+    name: "",
+    title: "",
+    description: "",
+    image: "",
   });
 
   const addProduct = (item) => {

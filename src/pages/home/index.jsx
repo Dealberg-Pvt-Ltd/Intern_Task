@@ -12,7 +12,7 @@ export default function Home() {
       <div className={styles.homeWrapper}>
         {items?.map((item) => (
           <Card item={item} key={item.id} />
-        ))}
+        ),)}
       </div>
     </Layout>
   );
